@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/index.css">
+</head>
+<body>
+    <main class="main-container">
+        <article class="card-container">
+            <div class="card-header">
+                <h2>Add product</h2>
+            </div>
+            <form id="product-form">
+                <input      id="productNAme" type="text" placeholder="product name">
+                <input      id="price" type="number" name="price" step="0.01" id="price"  min="7" placeholder="Price">
+                <input type="date" name="date" id="date" placeholder="Date">
+                <input type="submit" value="Enviar" placeholder="enviar" id="enviar">
+            </form>
+        </article>
+        <section class="products-list">
+            <div class="list-item">
+                <div class="product-detail">
+                    <p>Product Name: <span>Samsung</span></p>
+                    <p>Product Price: <span>$758414</span></p>
+                    <p>Product Date: <span>21/6/2028</span></p>
+                </div>
+                <button id="delete">Delete</button>
+            </div>
+             
+        </section>
+    </main>
+
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+*{
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.main-container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    grid-template-areas: "card-container" "products-list products-list";
+}
+/*  dola 131.24 goud */
+.card-container{
+    grid-area: "card-container";
+    width: 100%;
+    
+    border-color: blue;
+}
+
+.card-header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid burlywood 5px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    height: 30px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 0 20px;
+    outline: none;
+    border: solid #4070f4 1.5px;
+    border-radius: 5px;
+}
+input::placeholder{
+    color: #212114;
+}
+input[type="submit"]{
+    background-color: #4070f4;
+    
+    font-size: 14px;
+}
+input[type="submit"]::placeholder{
+    color: aliceblue;
+}
+.products-list{
+    grid-area: "products-list";
+    width: 90%;
+    background-color: darkorange;
+}
+
+.list-item{
+    padding: 10px 20px;
+    border: solid #212114;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.product-detail{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.product-detail p{
+    font-weight: 500;   
+}
+
+#delete{
+    background-color: rgb(90, 3, 3);
+    color: #F5F5F5;
+    padding: 10px 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#delete:hover{
+    background-color: #F5F5F5;
+    color: rgb(90, 3, 3);
+}
